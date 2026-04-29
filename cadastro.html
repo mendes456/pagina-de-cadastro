@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro- Evento Brabas do Asfalto</title>
+
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+    
+
+    <header>
+
+        <div class="logo">
+            <h1>As Brabas do Asfalto </h1>
+            <img src="img/logo.png" width="60px" height="60px">
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="texto">
+
+                <div class="titulo">
+                    <h2>Festival das</h2>
+                    <h2> Brabas do </h2>
+                    <h2>Asfalto</h2>
+                </div>
+
+
+                <p class="sub-titulo">
+                    Um evento voltado para mulheres apaixonadas por motos,
+                    música e liberdade...
+                </p>
+
+                <div class="lista">
+                    <ul>
+                        <li>Data: 12-14 de Setembro, 2026.</li>
+                        <li>Local: Bonsucesso (Av. Paris, 84).</li>
+                        <li>Horário: 10h às 22h (todos os dias).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="formulario">
+                <h2>Faça seu Cadastro</h2>
+
+                <form class="form" >
+                    <div class="div_input">
+                        <label for="nome" class="label">Nome Completo: </label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                    </div>
+
+                    <div class="div_input">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
+                    </div>
+
+                    <div class="div_input">
+                        <label for="data_nascimento" class="label">Data de Nascimento: </label>
+                        <input type="date" id="data_nascimento" name="data_nascimento" required>
+                    </div>
+
+
+                    <div class="div_input">
+                        <label for="genero">Gênero: </label>
+                        <select required>
+                            <option value="">Selecione:</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Outros</option>
+                        </select>
+
+                    </div>
+
+                    <div class="div_input">
+                        <label for="senha">Senha: </label>
+                        <input type="password" id="senha" name="senha" placeholder="Senha (só números)" required>
+                    </div>
+
+                    <div class="div_input">
+                        <label for="confirmarSenha">Confirmar Senha:</label>
+                        <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar Senha"
+                            required>
+                    </div>
+
+                    <div class="div_input">
+                        <label for="modelo">Modelo da Moto:</label>
+                        <input type="text" id="modelo" name="modelo" placeholder="ex: Honda CB500, Yamaha R3" required>
+                    </div>
+
+
+                    <button type="submit">Confirmar Cadastro</button>
+
+                    <p id="mensagem"></p>
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer class="rodape">
+
+        <div class="flex-container">
+
+            <section class="div-braba">
+                <h3 id="brabas">As Brabas do Asfalto</h3>
+
+                <p>Empoderando mulheres sobre duas rodas desde 2020.</p>
+            </section>
+
+            <section class="div-contato">
+                <h3>CONTATO</h3>
+
+                <p>contato@asbrabasdoasfalto.com</p>
+            </section>
+
+            <section class="div-redes">
+                <h3>REDES SOCIAIS</h3>
+
+
+                <div class="social">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                </div>
+
+            </section>
+
+        </div>
+
+        <div class="rodape-final">
+
+            <p id="p-rodape">© 2026 AsBrabasDoAsfalto – Projeto acadêmico (Brenda Mendes)</p>
+
+        </div>
+
+    </footer>
+
+
+    <!--    JS      -->
+
+<script src="js/cadastro.js"></script>
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

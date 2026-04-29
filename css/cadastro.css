@@ -1,0 +1,303 @@
+:root {
+    --rosa: #ff1d8d;
+    --rosa-hover: #f558a7;
+    --fundo: #3F3B3B;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    border-bottom: 3px solid #ff1d8d;
+    background-color: rgb(63, 59, 59);
+}
+
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding: 30px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+img {
+    padding-bottom: 10px;
+}
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/moto.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 160vh;
+
+}
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+
+
+    height: 100%;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    align-items: baseline;
+}
+
+.formulario {
+    background-color: var(--fundo);
+    color: white;
+    border-radius: 30px;
+    border: 1px solid var(--rosa);
+    padding: 40px;
+}
+
+.formulario h2 {
+    color: var(--rosa-hover);
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.formulario button {
+    background: var(--rosa);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.formulario button:hover {
+    background-color: #f558a7;
+
+}
+
+.div_input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-size: 18px;
+    gap: 5px;
+
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid var(--rosa);
+    font-size: 14px;
+    background-color: black;
+    color: white;
+
+}
+
+#mensagem {
+    display: none;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(212, 211, 211);
+    border: 1px solid var(--rosa);
+    min-height: 20px;
+    transition: 0.3s ease;
+}
+
+
+
+/* Inputs normais (exceto date) */
+input:not([type="date"]):not(:placeholder-shown):invalid {
+    border: 2px solid red;
+}
+
+input:not([type="date"]):not(:placeholder-shown):valid {
+    border: 2px solid green;
+}
+
+/* Select só depois que o usuário escolher */
+select:required:invalid {
+    border: 1px solid var(--rosa); /* borda normal ao abrir */
+}
+
+select:required:valid {
+    border: 2px solid green;
+}
+
+/* Campo date */
+input[type="date"]:focus:invalid {
+    border: 2px solid red;
+}
+
+input[type="date"]:valid {
+    border: 2px solid green;
+}
+
+
+.texto {
+    color: white;
+    padding-top: 100px;
+    margin: 30px;
+
+}
+
+.texto h2 {
+    color: var(--rosa);
+    text-shadow: 5px 5px 8px black;
+    font-size: 85px;
+    font-weight: 600px;
+    padding-bottom: 10x;
+
+}
+
+.sub-titulo {
+    font-size: 32px;
+    font-weight: 300;
+    margin-right: 60px;
+    padding: 60px 10px;
+}
+
+.lista {
+    font-size: 24px;
+    padding: 20px;
+
+}
+
+/* footer */
+
+.rodape {
+    background-color: #3F3B3B;
+    color: rgb(212, 211, 211);
+    font-size: 18px;
+    border-top: 3px solid #ff1d8d;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    padding: 20px 30px 30px 30px;
+}
+
+#brabas {
+    color: var(--rosa-hover);
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h3 {
+    padding-bottom: 15px;
+}
+
+.social a {
+    color: #ff1d8d;
+    font-size: 26px;
+    margin-right: 15px;
+    transition: 0.3s;
+
+}
+
+.social a:hover {
+    color: #f558a7;
+}
+
+.rodape-final p {
+    display: inline-block;
+    
+    border-top: 2px solid var(--rosa);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.rodape-final{
+ text-align: center;
+}
+
+
+
+
+
+
+
+/* responsivo*/
+
+
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 40px;
+    }
+
+   
+    .texto {
+        padding-top: 20px;
+        margin: 0;
+        text-align: left; 
+    }
+
+    .texto h2 {
+        font-size: 60px;
+    }
+
+    .sub-titulo {
+        font-size: 26px;
+        padding: 20px 0;
+        margin: 0;
+        text-align: left; 
+    }
+
+    .lista {
+        padding: 20px ;
+        font-size: 22px;
+    }
+
+   
+    .formulario {
+        padding: 20px;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto; 
+    }
+
+    .formulario h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+   
+    main {
+        height: auto; /* remove travamento */
+        min-height: 180vh; 
+    }
+
+   
+    .flex-container {
+        flex-direction: column;
+        gap: 45px;
+        text-align: left; 
+    }
+
+    .rodape-final {
+        text-align: left; 
+        padding-left: 20px;
+    }
+}
